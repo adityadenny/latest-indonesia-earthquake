@@ -81,3 +81,7 @@ def show_data(result):
     print(f"Location : {result['location']}")
     # print(f"Epicenter : {result['epicenter']}")
     print(f"Feel : {result['feel']}")
+
+if __name__ == '__main__':
+    result = data_extraction()
+    show_data(result)
