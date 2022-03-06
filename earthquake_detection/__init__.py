@@ -35,7 +35,6 @@ def data_extraction():
         depth = None
         location = None
         feel = None
-        coordinate = None
 
         for res in items:
             # print(i, res)
@@ -55,14 +54,14 @@ def data_extraction():
             i = i + 1
 
         results = dict()
-        results['date'] = date # '03 Maret 2022'
-        results['time'] = time # '13:37:04 WIB'
-        results['magnitude'] = magnitudo # 4.8
-        results['koordinate'] = [ls, bt] # {'LU': 1.48, 'BT': 100.00}
-        results['depth'] = depth # '10 km'
-        results['location'] = location # {'LU': 1.48, 'BT': 100.00}
+        results['date'] = date  # '03 Maret 2022'
+        results['time'] = time  # '13:37:04 WIB'
+        results['magnitude'] = magnitudo  # 4.8
+        results['koordinate'] = [ls, bt]  # {'LU': 1.48, 'BT': 100.00}
+        results['depth'] = depth  # '10 km'
+        results['location'] = location  # {'LU': 1.48, 'BT': 100.00}
         # results['epicenter'] = 'Pusat gempa berada di darat 8 km tenggara Talu'
-        results['feel'] = feel # 'Dirasakan (Skala MMI): III Pasaman Barat, I-II Padang Panjang, I-II Pariaman'
+        results['feel'] = feel  # 'Dirasakan (Skala MMI): III Pasaman Barat, I-II Padang Panjang, I-II Pariaman'
         return results
     else:
         return None
@@ -81,6 +80,7 @@ def show_data(result):
     print(f"Location : {result['location']}")
     # print(f"Epicenter : {result['epicenter']}")
     print(f"Feel : {result['feel']}")
+
 
 if __name__ == '__main__':
     result = data_extraction()
