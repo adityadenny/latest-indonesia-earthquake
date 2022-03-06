@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="detectearthquakeindonesia",
-    version="0.1",
+    version="0.1.1",
     author="Denny Aditya H",
     author_email="adityadenny6@gmail.com",
     description="This package will scrape from [BMKG](https://www.bmkg.go.id/) to get latest earthquake happened in "
@@ -25,5 +25,5 @@ setuptools.setup(
     # package_dir={"": "src"},
     # packages=setuptools.find_packages(where="src"),
     packages=setuptools.find_packages(),
-    python_requires=">=3.6",
+    python_requires=">=3.8",
 )
